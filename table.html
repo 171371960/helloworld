@@ -12,8 +12,9 @@
 	</head>
 	<body>
 		<div class="sty">
-			<li v-for="(item,index) in all">
-				<span :class="[index==0?'clo':'']">{{item.name}}</span></li>
+			<table>
+			<tr v-for="(item,index) in all">
+				<td :class="[index==0?'clo':'']">{{item.name}}</td></tr></table>
 		</div>
 		<script type="text/javascript">
 			new Vue({
