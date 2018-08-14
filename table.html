@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="https://cdn.bootcss.com/vue/2.5.16/vue.js">
+			
+		</script>
+		<style type="text/css">
+			.clo{
+			color:red;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="sty">
+			<li v-for="(item,index) in all">
+				<span :class="[index==0?'clo':'']">{{item.name}}</span></li>
+		</div>
+		<script type="text/javascript">
+			new Vue({
+			el:".sty"
+			,data:{
+				all:[{ic:'123',name:'kan'},{ic:'223',name:'can'},{ic:'423',name:'fan'},{ic:'623',name:'gan'}]
+			}
+			})
+		</script>
+	</body>
+</html>
